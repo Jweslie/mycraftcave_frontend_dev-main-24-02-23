@@ -1,0 +1,87 @@
+
+
+<mat-card>
+  <table mat-table  class="mattable">
+     <tr>
+      <td mat-cell>
+      
+<img id="bnrimg" src="/assets/images/Rectangle587.jpg">
+</td>
+<td mat-cell>
+  
+  <div id="logincnt">
+      
+        <div class="col-md-10">
+          <h2 id="title"><u>Join MyCraft Caves</u></h2>
+          <img class="avator" [src]="userData.response.picture.data.url" style="width:20%; height:20%" >
+          <p class="mb-4">Change Profile Picture</p>
+        </div>
+       
+        <form  formGroup="profileform" >
+          
+          <div class=" form-group col-md-10">
+            <input type="text" class="form-control" id="firstname" [value]="userData.firstName" placeholder="Firstname">
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="lastname" [value]="userData.lastName" placeholder="Lastname">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="profession"  placeholder="Profession">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="mobileno"  placeholder="Mobile Number">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="email" class="form-control" id="email" [value]="userData.email" placeholder="Email Address">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="website" [value]="userData.provider" placeholder="Website">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="socialuser" [value]="userData.name"  placeholder="Social User">
+            
+          </div>
+          <div class="form-group col-md-10">
+            
+            <input type="text" class="form-control" id="location" placeholder="Location">
+            
+          </div>
+          
+          <div class="col-md-15">
+            <h3 id="inst">Instruction</h3>
+            <label class="control control--checkbox">I would like to be profile Public
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">I would like to be profile Private
+                <input type="checkbox" checked="checked"/>
+                <div class="control__indicator"></div>
+              </label>
+              <h3 id="inst">Password</h3>
+            <span class="ml-auto"><a href="#" class="forgot-pass">Password Change</a></span> 
+            
+          </div>
+          <div class="col-md-10">
+          <button class="btn btn-block btn-dark">Update Profile
+          </button>
+        </div>
+        </form>
+  </div>
+  
+      </td>
+      </tr>
+      </table>
+  </mat-card>
+  
+  
